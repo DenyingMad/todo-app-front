@@ -2,10 +2,11 @@ import React, {useState, useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import {useFormik} from 'formik'
 import "./index.css"
+import {getTaskList, saveTask} from "./api/taskApi";
 
 const Task = props => {
   return (
-    <p><input type="checkBox"/>{props.task.text}</p>
+    <p><input type="checkBox"/>{props.task.taskName}</p>
   );
 };
 
@@ -53,10 +54,8 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch('/task/get-all-tasks')
-      .then(response => response.json())
-      .then(json => console.log(json))
-  });
+    loadTasks(setTasks)
+  }, [setTasks]);
 
   return (
     <div className="container root-wrapper">
@@ -66,10 +65,10 @@ const App = () => {
         nextTaskNumber={tasks.length + 1}
         handleClick={(newTask) => {
           const newTaskObj = {
-            id: Date.now().toLocaleString(),
-            text: newTask,
+            taskName: newTask,
           };
-          setTasks(tasks.concat(newTaskObj));
+          // setTasks(tasks.concat(newTaskObj));
+          addTask(tasks, newTaskObj, setTasks)
         }}
       />
     </div>
@@ -84,3 +83,16 @@ ReactDOM.render(
   Root,
   document.getElementById('root')
 );
+
+const loadTasks = (setTasks) => {
+  getTaskList()
+    .then(tasks => setTasks(tasks))
+    .catch(() => console.log("Произошла ошибка при загрузке задач"));
+}
+
+const addTask = (tasks, task, setTask) => {
+  saveTask(task)
+    .then(task => setTask(tasks.concat(task)))
+    .catch(() => console.log("Произошла ошибка при создании задачи"))
+  console.log(tasks)
+}
