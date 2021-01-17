@@ -1,5 +1,3 @@
-import React from "react";
-
 const Task = props => {
   return (
     <p><input type="checkBox"/>{props.task.taskName}</p>
@@ -7,8 +5,8 @@ const Task = props => {
 };
 
 export const TaskList = props => {
-  const taskList = props.tasks.map((task) =>
-    <Task task={task}/>
+  const taskList = props.tasks.map((task, index) =>
+    <Task task={task} key={index}/>
   )
   return (
     <div className="list">

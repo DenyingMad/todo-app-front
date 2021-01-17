@@ -17,3 +17,26 @@ body {
 .root-wrapper {
     max-width: 960px;
 }
+
+.section-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.leftToolbar {
+    background-color: #061c34;
+    color: #fff;
+}
+.leftToolbar-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.leftToolbar-header {
+    color: #fff;
+    font: 26px 'Poppins', sans-serif;
+    margin: 20px 20px 40px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

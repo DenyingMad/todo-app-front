@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlnssvgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="32" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g transform="matrix(-1,0,0,1,512,0)">
+    <g xmlns="http://www.w3.org/2000/svg">
+      <path d="m346 151c8.284 0 15-6.716 15-15v-121c0-8.284-6.716-15-15-15h-240c-8.284 0-15 6.716-15 15v121c0 8.284 6.716 15 15 15zm-225-121h210v91h-210z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m286 61h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m31 196v120c0 8.284 6.716 15 15 15h300c8.284 0 15-6.716 15-15v-120c0-8.284-6.716-15-15-15h-300c-8.284 0-15 6.716-15 15zm30 15h270v90h-270z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m286 241h-120c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m346 361h-240c-8.284 0-15 6.716-15 15v121c0 8.284 6.716 15 15 15h240c8.284 0 15-6.716 15-15v-121c0-8.284-6.716-15-15-15zm-15 121h-210v-91h210z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m226 451h60c8.284 0 15-6.716 15-15s-6.716-15-15-15h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <path d="m391 436c0 24.813 20.187 45 45 45s45-20.187 45-45c0-19.555-12.541-36.228-30-42.42v-95.16c17.459-6.192 30-22.865 30-42.42s-12.541-36.228-30-42.42v-95.16c17.459-6.192 30-22.865 30-42.42 0-24.813-20.187-45-45-45s-45 20.187-45 45c0 19.555 12.541 36.228 30 42.42v95.16c-17.459 6.192-30 22.865-30 42.42s12.541 36.228 30 42.42v95.16c-17.459 6.192-30 22.865-30 42.42zm45 15c-8.271 0-15-6.729-15-15 0-8.268 6.723-14.994 14.99-15h.01s.006 0 .01 0c8.267.005 14.99 6.732 14.99 15 0 8.271-6.729 15-15 15zm0-390c8.271 0 15 6.729 15 15s-6.729 15-15 15-15-6.729-15-15 6.729-15 15-15zm0 180c8.271 0 15 6.729 15 15s-6.729 15-15 15-15-6.729-15-15 6.729-15 15-15z" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <circle cx="166" cy="436" r="15" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <circle cx="106" cy="256" r="15" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+      <circle cx="166" cy="76" r="15" fill="#ffffff" dataOriginal="#000000" style="" class=""/>
+    </g>
+  </g>
+</svg>

@@ -1,8 +1,11 @@
 import React from "react";
-import HarnessView from "../pages/harness/HarnessView";
+import {withRouter} from "react-router-dom";
+import AppView from "./AppView"
 
-export const App = () => {
+const App = () => {
   return (
-    <HarnessView />
+    <AppView/>
   );
 };
+
+export default withRouter(App);
