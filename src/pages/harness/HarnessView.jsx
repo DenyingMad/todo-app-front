@@ -5,13 +5,11 @@ import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
 import {ListItem, ListItemIcon, ListItemText, makeStyles} from "@material-ui/core";
 
-import {TaskListView} from "../../components/taskList/taskListView";
-
 import { ReactComponent as Dashboard } from "../../images/dashboard.svg";
 import { ReactComponent as Timeline } from "../../images/timeline.svg";
 import { ReactComponent as Calendar } from "../../images/calendar.svg";
 import { ReactComponent as Reports } from "../../images/send.svg";
-import {Link} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 
 const SECTIONS = [
   {sectionName: 'Dashboard', href: '/dashboard', Icon: Dashboard},
@@ -64,17 +62,16 @@ const LeftToolbar = () => {
     </Drawer>)
 }
 
-const HarnessView = () => {
+const HarnessView = (props) => {
+  const {children} = props;
   return (
-    <>
       <div>
         <LeftToolbar/>
+        <main className="container root-wrapper">
+          {children}
+        </main>
       </div>
-      <div className="container root-wrapper">
-        <TaskListView/>
-      </div>
-    </>
   );
 };
 
-export default HarnessView;
+export default withRouter(HarnessView);
